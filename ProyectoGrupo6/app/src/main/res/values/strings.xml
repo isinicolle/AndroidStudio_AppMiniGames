@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProyectoGrupo6</string>
+    <string name="bienvenida">¡Bienvenid@ a nuestra aplicación!</string>
+    <string name="ahorcado">Ahorcado</string>
+    <string name="x0">X 0</string>
+    <string name="flappy">Flappy Bird</string>
+    <string name="boton_de_ahorcado">BOTON DE AHORCADO</string>
+    <string name="icono_aplicacion">ICONO APLICACION</string>
+    <string name="boton_x0">boton x0</string>
+    <string name="boton_flappy_bird">boton flappy bird</string>
+</resources>
