@@ -4,6 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/fondox0"
     tools:context=".MainX0">
 
+
+    <TextView
+        android:id="@+id/lbljuegox0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/juegox0"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imgX0"
+        android:layout_width="230dp"
+        android:layout_height="278dp"
+        android:contentDescription="@string/tablerox0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        app:srcCompat="@mipmap/tablerocompleto"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/btniniciar"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="195dp"
+        android:layout_height="57dp"
+        android:onClick="iniciarjuego"
+        android:text="@string/btniniciax0"
+        android:textColor="@android:color/primary_text_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="195dp"
+        android:layout_height="57dp"
+        android:onClick="regresar"
+        android:text="@string/btnsalirx0"
+        android:textColor="@android:color/primary_text_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

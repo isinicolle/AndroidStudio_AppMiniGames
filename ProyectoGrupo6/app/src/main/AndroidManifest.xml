@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoGrupo6">
         <activity
+            android:name=".JuegoX0"
+            android:exported="false" />
+        <activity
             android:name=".MainAhorcado"
             android:exported="false" />
         <activity

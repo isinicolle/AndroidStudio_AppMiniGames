@@ -8,4 +8,8 @@
     <string name="icono_aplicacion">ICONO APLICACION</string>
     <string name="boton_x0">boton x0</string>
     <string name="boton_flappy_bird">boton flappy bird</string>
+    <string name="juegox0">Juego del X-O</string>
+    <string name="tablerox0">tablerox0</string>
+    <string name="btniniciax0">Iniciar Juego</string>
+    <string name="btnsalirx0">Salir</string>
 </resources>
