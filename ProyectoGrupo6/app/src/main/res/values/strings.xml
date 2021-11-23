@@ -12,4 +12,14 @@
     <string name="tablerox0">tablerox0</string>
     <string name="btniniciax0">Iniciar Juego</string>
     <string name="btnsalirx0">Salir</string>
+    <string name="jugador1">Jugador 1</string>
+    <string name="jugador2">Jugador 2</string>
+    <string name="imagen_jugador_2">imagen jugador 2</string>
+    <string name="imagen_jugador_1">imagen jugador 1</string>
+    <string name="btnIniciarJuegoX0">Iniciar Juego</string>
+    <string name="_1_23">(1) : (23)</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>
