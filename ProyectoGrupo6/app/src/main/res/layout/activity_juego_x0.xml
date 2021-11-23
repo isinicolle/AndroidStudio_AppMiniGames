@@ -77,12 +77,13 @@
         app:srcCompat="@mipmap/tablerovaciox0" />
 
     <Button
-        android:id="@+id/btnIniciarx0"
-        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:id="@+id/iniciarjuego"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="150dp"
         android:layout_height="60dp"
+        android:background="@color/teal_700"
         android:text="@string/btnIniciarJuegoX0"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/design_default_color_primary_variant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -92,9 +93,10 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageButton
-        android:id="@+id/btnR"
+        android:id="@+id/salida"
         android:layout_width="60dp"
         android:layout_height="63dp"
+        android:background="@android:color/holo_purple"
         android:contentDescription="@string/todo4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,9 +108,10 @@
         tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
-        android:id="@+id/btnRR"
+        android:id="@+id/resetear"
         android:layout_width="60dp"
         android:layout_height="63dp"
+        android:background="@android:color/holo_purple"
         android:contentDescription="@string/todo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,9 +123,10 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/btnP"
+        android:id="@+id/pausar"
         android:layout_width="60dp"
         android:layout_height="63dp"
+        android:background="@android:color/holo_purple"
         android:contentDescription="@string/todo2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
