@@ -15,6 +15,7 @@ import java.util.Random;
 public class JuegoX0 extends AppCompatActivity {
 
     TextView textoVictoria;
+    Button Reiniciar;
     Integer[] botones;
     int[] tablero = new int[]{
             0, 0, 0,
@@ -33,6 +34,9 @@ public class JuegoX0 extends AppCompatActivity {
 
         textoVictoria = (TextView) findViewById(R.id.textoVictoria);
         textoVictoria.setVisibility(View.INVISIBLE);
+
+        Reiniciar = (Button) findViewById(R.id.btnReiniciar);
+        Reiniciar.setVisibility(View.INVISIBLE);
 
         botones = new Integer[]{
                 R.id.b1, R.id.b2, R.id.b3,
@@ -76,12 +80,14 @@ public class JuegoX0 extends AppCompatActivity {
                 textoVictoria.setText("Has Ganado ;)");
                 textoVictoria.setTextColor(Color.BLACK);
                 fichavictoria = R.drawable.xvictoria;
+                Reiniciar.setVisibility(View.VISIBLE);
             }
             else{
                 textoVictoria. setVisibility(View.VISIBLE);
                 textoVictoria.setText("Has perdido ;(");
                 textoVictoria. setTextColor (Color.BLACK);
                 fichavictoria = R.drawable.novictoria;
+                Reiniciar.setVisibility(View.VISIBLE);
             }
             //
                 for (int i = 0; i<posGanadora.length; i++)
@@ -96,6 +102,7 @@ public class JuegoX0 extends AppCompatActivity {
             textoVictoria.setVisibility(View.VISIBLE);
             textoVictoria.setText("Has Empatado -_-");
             textoVictoria. setTextColor (Color.BLACK);
+            Reiniciar.setVisibility(View.VISIBLE);
         }
 
     }
@@ -159,6 +166,13 @@ public class JuegoX0 extends AppCompatActivity {
 
     }
 //
+    public void reiniciar(View view)
+    {
+        finish();
+        Intent boton_x_0 = new Intent(this,JuegoX0.class);
+        startActivity(boton_x_0);
+
+    }
 }
 
 

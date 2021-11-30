@@ -65,8 +65,8 @@
 
     <TextView
         android:id="@+id/textoVictoria"
-        android:layout_width="201dp"
-        android:layout_height="88dp"
+        android:layout_width="333dp"
+        android:layout_height="79dp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="34sp"
@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
         android:id="@+id/imgj1"
@@ -251,5 +251,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.738"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:onClick="reiniciar"
+        android:text="@string/btnReiniciarJuegoX0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

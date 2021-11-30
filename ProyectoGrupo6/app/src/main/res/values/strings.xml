@@ -17,6 +17,7 @@
     <string name="imagen_jugador_2">imagen jugador 2</string>
     <string name="imagen_jugador_1">imagen jugador 1</string>
     <string name="btnIniciarJuegoX0">Iniciar Juego</string>
+    <string name="btnReiniciarJuegoX0">Jugar de nuevo</string>
     <string name="_1_23">(1) : (23)</string>
     <string name="todo1">TODO1</string>
     <string name="todo2">TODO2</string>
