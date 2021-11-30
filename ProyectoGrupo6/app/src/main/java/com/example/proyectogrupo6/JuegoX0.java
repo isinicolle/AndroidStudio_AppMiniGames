@@ -2,6 +2,7 @@ package com.example.proyectogrupo6;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -30,11 +31,8 @@ public class JuegoX0 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego_x0);
 
-
-
         textoVictoria = (TextView) findViewById(R.id.textoVictoria);
         textoVictoria.setVisibility(View.INVISIBLE);
-
 
         botones = new Integer[]{
                 R.id.b1, R.id.b2, R.id.b3,
@@ -54,8 +52,6 @@ public class JuegoX0 extends AppCompatActivity {
                 tablero[numBoton] = 1;
                 fichasPuestas += 1;
                 estado = comprobarEstado();
-//
-
                 terminarPartida();
                 //
                 if (estado == 0) {
@@ -71,36 +67,38 @@ public class JuegoX0 extends AppCompatActivity {
     }
     //
     public void terminarPartida(){
-        int fichavictoria = R.drawable.xvictoria;
+        int fichavictoria;
 
         if(estado == 1 || estado == -1)
         {
             if(estado == 1) {
                 textoVictoria.setVisibility(View.VISIBLE);
-                textoVictoria.setTextColor(Color.GREEN);
+                textoVictoria.setText("Has Ganado ;)");
+                textoVictoria.setTextColor(Color.BLACK);
+                fichavictoria = R.drawable.xvictoria;
             }
             else{
-                    textoVictoria. setVisibility(View.VISIBLE);
-                    textoVictoria.setText("Has perdido ;(");
-                    textoVictoria. setTextColor (Color.RED);
-                    fichavictoria = R.drawable._victoria;
-                }
+                textoVictoria. setVisibility(View.VISIBLE);
+                textoVictoria.setText("Has perdido ;(");
+                textoVictoria. setTextColor (Color.BLACK);
+                fichavictoria = R.drawable.novictoria;
+            }
             //
-
                 for (int i = 0; i<posGanadora.length; i++)
                 {
                     Button b = findViewById (botones[posGanadora[i]]);
                     b.setBackgroundResource (fichavictoria);
                 }
-            }
+        }
 //
-    	        else if(estado == 2)
-    	        {
-                    textoVictoria.setVisibility(View.VISIBLE);
-                    textoVictoria.setText("Has Empatado");
-                }
+        else if(estado == 2)
+        {
+            textoVictoria.setVisibility(View.VISIBLE);
+            textoVictoria.setText("Has Empatado -_-");
+            textoVictoria. setTextColor (Color.BLACK);
+        }
 
-            }
+    }
     //
     public void ia()
     {
@@ -122,7 +120,6 @@ public class JuegoX0 extends AppCompatActivity {
             posGanadora = new int[]{0,1,2};
             nuevoEstado = 1*turno;
         }
-
         else if(Math.abs(tablero[3]+tablero[4]+tablero[5]) ==3){
             posGanadora = new int[]{3,4,5};
             nuevoEstado = 1*turno;
@@ -160,10 +157,8 @@ public class JuegoX0 extends AppCompatActivity {
 
         return nuevoEstado;
 
-
-}
+    }
 //
-
 }
 
 
