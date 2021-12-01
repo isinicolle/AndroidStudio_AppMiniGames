@@ -37,6 +37,7 @@
         android:id="@+id/btn_flappy"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="83dp"
+        android:background="@null"
         android:layout_height="79dp"
         android:contentDescription="@string/boton_flappy_bird"
         android:onClick="boton_flapp"
@@ -52,6 +53,7 @@
 
     <ImageButton
         android:id="@+id/btn_X0"
+        android:background="@null"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="83dp"
         android:layout_height="79dp"
@@ -71,6 +73,7 @@
         android:id="@+id/btn_ahorcado"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="83dp"
+        android:background="@null"
         android:layout_height="79dp"
         android:contentDescription="@string/boton_de_ahorcado"
         android:onClick="boton_aho"
