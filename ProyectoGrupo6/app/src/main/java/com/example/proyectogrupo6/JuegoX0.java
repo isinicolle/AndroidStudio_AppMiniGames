@@ -77,14 +77,14 @@ public class JuegoX0 extends AppCompatActivity {
         {
             if(estado == 1) {
                 textoVictoria.setVisibility(View.VISIBLE);
-                textoVictoria.setText("Has Ganado ;)");
+                textoVictoria.setText("Has Ganado");
                 textoVictoria.setTextColor(Color.BLACK);
                 fichavictoria = R.drawable.xvictoria;
                 Reiniciar.setVisibility(View.VISIBLE);
             }
             else{
                 textoVictoria. setVisibility(View.VISIBLE);
-                textoVictoria.setText("Has perdido ;(");
+                textoVictoria.setText("Has perdido");
                 textoVictoria. setTextColor (Color.BLACK);
                 fichavictoria = R.drawable.novictoria;
                 Reiniciar.setVisibility(View.VISIBLE);
@@ -100,7 +100,7 @@ public class JuegoX0 extends AppCompatActivity {
         else if(estado == 2)
         {
             textoVictoria.setVisibility(View.VISIBLE);
-            textoVictoria.setText("Has Empatado -_-");
+            textoVictoria.setText("Has Empatado");
             textoVictoria. setTextColor (Color.BLACK);
             Reiniciar.setVisibility(View.VISIBLE);
         }
@@ -171,7 +171,6 @@ public class JuegoX0 extends AppCompatActivity {
         finish();
         Intent boton_x_0 = new Intent(this,JuegoX0.class);
         startActivity(boton_x_0);
-
     }
 }
 

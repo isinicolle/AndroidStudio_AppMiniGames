@@ -25,6 +25,7 @@ public class MainX0 extends AppCompatActivity {
     //Metodo para salir
     public void regresar(View view)
     {
+        finish();
         Intent regresar = new Intent(this,MainActivity.class);
         startActivity(regresar);
     }
