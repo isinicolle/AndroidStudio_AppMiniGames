@@ -71,7 +71,7 @@ public class JuegoX0 extends AppCompatActivity {
     }
     //
     public void terminarPartida(){
-        int fichavictoria;
+        int fichavictoria = R.drawable.xvictoria;
 
         if(estado == 1 || estado == -1)
         {
@@ -86,7 +86,7 @@ public class JuegoX0 extends AppCompatActivity {
                 textoVictoria. setVisibility(View.VISIBLE);
                 textoVictoria.setText("Has perdido");
                 textoVictoria. setTextColor (Color.BLACK);
-                fichavictoria = R.drawable.novictoria;
+                fichavictoria = R.drawable.ovictoria;
                 Reiniciar.setVisibility(View.VISIBLE);
             }
             //

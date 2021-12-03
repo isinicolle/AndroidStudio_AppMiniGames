@@ -257,11 +257,15 @@
 
     <Button
         android:id="@+id/btnReiniciar"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="197dp"
         android:layout_height="48dp"
+        android:backgroundTint="#DCD8D8"
         android:onClick="reiniciar"
         android:text="@string/btnReiniciarJuegoX0"
+        android:textColor="#002B73"
+        android:textSize="16sp"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
