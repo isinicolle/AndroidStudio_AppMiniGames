@@ -1,9 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainAhorcado">
+    tools:context=".MainActivity"
+    android:background="#000000"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="@drawable/cartoon_galaxy_background"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:scaleType="centerCrop"
+        >
+
+        <ImageView
+            android:id="@+id/Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/gallows" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:paddingStart="98dp"
+            android:paddingTop="26dp"
+            android:src="@drawable/alien"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="120dp"
+            android:paddingTop="60dp"
+            android:src="@drawable/body"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/brazoIzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="100dp"
+            android:paddingTop="68dp"
+            android:src="@drawable/arm_left"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/brazoDer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="120dp"
+            android:paddingTop="68dp"
+            android:src="@drawable/arm_right"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/piernIzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="101dp"
+            android:paddingTop="90dp"
+            android:src="@drawable/leg_left"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/piernDer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="121dp"
+            android:paddingTop="90dp"
+            android:src="@drawable/leg_right"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="btnPista_onClick"
+            app:srcCompat="@drawable/lightbulb"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/palabras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Pistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpistaPalabra"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/letras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:numColumns="7"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:background="@color/fondoGridview"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp" />
+
+
+</LinearLayout>
