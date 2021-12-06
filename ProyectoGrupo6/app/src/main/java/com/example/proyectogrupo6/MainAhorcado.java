@@ -6,15 +6,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Console;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -60,17 +63,22 @@ public class MainAhorcado extends AppCompatActivity {
 
     }
     private void jugarJuego(){
+        //Reinicio de variables
         numPist = 0;
+        numCorr=0;
+        partAct=0;
         layoutPal.removeAllViews();
+        //Reasignacion de variables
         String nuevaPal=mis_palabras.get(random.nextInt(mis_palabras.size()));
-        while(nuevaPal.equals(palAct))
+        while(nuevaPal.split("\\|")[0].equals(palAct))
             nuevaPal=mis_palabras.get(random.nextInt(mis_palabras.size()));
         String[] separador=nuevaPal.split("\\|");
         palAct=separador[0];
         pista=separador[1];
+        txtPistaPalabra.setText(pista); //Asignar la pista
         charView= new TextView[palAct.length()];
         numChar=palAct.length();
-        numPist = 0;
+        //Asignacion de caracteres
         for(int i=0;i<palAct.length();i++)
         {
             charView[i]= new TextView(this  );
@@ -81,16 +89,14 @@ public class MainAhorcado extends AppCompatActivity {
             charView[i].setBackgroundResource(R.drawable.letter_bg);
             layoutPal.addView(charView[i]);
         }
-
+        //Reestablecer las letras
         adaptador=new AdaptadorLetra(this);
         gridView.setAdapter(adaptador);
-        numCorr=0;
-        partAct=0;
+        //Reestablecer el ahorcado
         for (int i=0;i<intentos;i++)
         {
             partes[i].setVisibility(View.INVISIBLE);
         }
-        txtPistaPalabra.setText(pista);
     }
     public void btnLetra_onClick(View view) {
         char letra=((TextView)view).getText().toString().charAt(0);
@@ -149,7 +155,6 @@ public class MainAhorcado extends AppCompatActivity {
         }
     }
     public void mostrar(){
-
         int a = random.nextInt(palAct.length());
         char letra = palAct.charAt(a);
         while(charView[a].getCurrentTextColor() == Color.BLACK){
@@ -162,6 +167,13 @@ public class MainAhorcado extends AppCompatActivity {
                 charView[i].setTextColor(Color.BLACK);
             }
         }
+        for (int i=0;i<adaptador.getCount();i++)
+        {
+            if (((Button)gridView.getChildAt(i)).getText().charAt(0)==letra) {
+                gridView.getChildAt(i).setEnabled(false);
+            }
+        }
+
     }
 
     public void btnPista_onClick(View view){

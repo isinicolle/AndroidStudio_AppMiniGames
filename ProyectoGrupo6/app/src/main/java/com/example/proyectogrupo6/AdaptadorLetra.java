@@ -11,9 +11,14 @@ public class AdaptadorLetra extends BaseAdapter {
    private String[]letters;
    private LayoutInflater letterinf;
    public AdaptadorLetra(Context context){
-       letters=new String[26];
+       letters=new String[27];
        for(int i=0;i<letters.length;i++){
+           if(i<=13)
            letters[i]=""+(char)(i+'A');
+           else if(i==14)
+               letters[i]=""+(char)165;
+           else
+               letters[i]=""+(char)((i-1)+'A');
        }
        letterinf=LayoutInflater.from(context);
    }
