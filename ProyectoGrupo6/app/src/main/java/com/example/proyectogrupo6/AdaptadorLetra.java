@@ -16,7 +16,7 @@ public class AdaptadorLetra extends BaseAdapter {
            if(i<=13)
            letters[i]=""+(char)(i+'A');
            else if(i==14)
-               letters[i]=""+(char)165;
+               letters[i]=""+'\u00f1';
            else
                letters[i]=""+(char)((i-1)+'A');
        }
