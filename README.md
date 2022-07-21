@@ -1,6 +1,1 @@
-Proyecto de programación móvil 1, tercer parcial , III Periodo 2021 
-        Alex Sandoval,
-        Andres Martinez,
-        Isis Zapata,
-        Jorge Ayala,
-        Nicolle Benavidez 
+## Si quieres bajar esta aplicacion y probarla en tu movil descarga el siguiente archivo [Instalador de la app](https://github.com/isinicolle/AndroidStudio_AppMiniGames/blob/main/AppGrupo%236.apk) y lo pasas a tu telefono.
